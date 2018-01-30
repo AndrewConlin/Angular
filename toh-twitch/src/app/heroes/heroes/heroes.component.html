@@ -1,0 +1,11 @@
+<div class = 'page-content'>
+  <h3>Heroes</h3>
+
+<mat-list class = 'heroes' *ngIf='heroes && heroes.length'>
+    <mat-list-item *ngFor = 'let hero of heroes'>
+        <div>{{ hero.name }}</div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+</div>
+
