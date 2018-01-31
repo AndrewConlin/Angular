@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor='let cust of customers'>  <!–– need to add async pipe if using Promise or Observable ––>
+      <my-customer [customer]="cust"></my-customer>
+    </li>
+</ul>
