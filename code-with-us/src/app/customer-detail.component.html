@@ -1,0 +1,19 @@
+<h1>
+  <button (click)="left()"><-</button>{{customer.name}}
+  <button (click)="right()">-></button>
+</h1>
+<p><i>{{customer.name}} is at {{customer.address.street}} in {{customer.address.city}}, {{customer.address.state}} in the {{customer.address.region}} region</i></p>
+<br/>
+
+<fieldset>
+    <!-- <input (input)="name=$event.target.value" [value]="name"><br/>
+    <input (keyup)="name=$event.target.value" [value]="name"><br/>
+    <input (keyup.enter)="name=$event.target.value" (blur)="name=$event.target.value" [value]="name"><br/> -->
+    <label>Name <input [(ngModel)]="customer.name"></label> <br>
+</fieldset>
+
+<div *ngIf="!hideAddress">
+       <address-comp [address]="customer.address"></address-comp>
+</div>
+
+<label>Hide Address<input type="checkbox" [(ngModel)]="hideAddress"></label>

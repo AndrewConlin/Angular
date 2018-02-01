@@ -12,13 +12,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PathNotFoundComponent } from './path-not-found/path-not-found.component';
 
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    PathNotFoundComponent
-  ],
+  declarations: [AppComponent, HomeComponent, PathNotFoundComponent],
   imports: [
     BrowserModule,
     // HttpClientModule,
@@ -31,4 +26,4 @@ import { PathNotFoundComponent } from './path-not-found/path-not-found.component
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
