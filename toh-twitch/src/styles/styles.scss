@@ -1,0 +1,13 @@
+@import 'mixin';
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  background-color: #ffffff;
+}
+.page-content {
+  margin: 1em;
+}
+.router-link-active {
+  @include primary-background-contrast-color;
+}
